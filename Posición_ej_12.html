@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posición CSS</title>
+    <style>
+        div.static {
+            position: static;
+            border: 5px solid #ad5421;
+            margin-bottom: 20px; 
+        }
+        div.relative {
+            position: relative;
+            width: 410px;
+            height: 220px;
+            border: 3px solid #ad2123;
+            margin-bottom: 20px; 
+        }
+        div.absolute {
+            position: absolute;
+            top: 100px;
+            right: 0;
+            width: 220px;
+            height: 110px;
+            border: 3px solid #73AD21;
+            margin-bottom: 20px; 
+        }
+        div.sticky {
+            position: -webkit-sticky;
+            position: sticky;
+            top: 0;
+             padding: 8px;
+            background-color: #e8cacb;
+            border: 2px solid #4c8eaf;
+        }
+        div.fixed {
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            width: 250px;
+            border: 3px solid #5e21ad;
+            margin-bottom: 20px; 
+        }
+    </style>
+</head>
+<body>
+    <h1>Las cuatro estaciones</h1>
+    <h2>Estación de primavera:</h2>
+    <div class="static">
+        La primavera comienza alrededor del 21 de marzo en el hemisferio norte y el 21 de septiembre en el hemisferio sur. 
+        En esta época del año, comienzan a salir las flores y crecen las hojas en los árboles. Durante esta estación nacen las 
+        crías de muchos animales.
+    </div>
+
+    <h2>Estación de invierno:</h2>
+    <div class="relative">
+        El invierno comienza alrededor del 21 de diciembre en el hemisferio norte y el 21 de junio en el hemisferio sur. Es una 
+        estación donde hace más frío, incluso cae nieve en algunas regiones. Los días son más cortos pues el Sol proporciona luz 
+        indirecta a la Tierra. El frío afecta el comportamiento de los animales, algunos animales como los osos hibernan en el invierno.
+        <div class="absolute">El 21 de diciembre marca el día en que la Tierra está más alejada del Sol. Esto se conoce como el Solsticio de Invierno. 
+            Es el día más corto y más oscuro del año.</div>
+    </div>
+
+    <h2>Estación de verano:</h2>
+    <div class="sticky">El 21 de junio marca el día en que la Tierra gira más cerca al Sol. Esto se conoce como Solsticio de Verano. Es el día más largo y soleado del año</div>
+    <div style="padding-bottom: 1800px">
+        El verano es la temporada con mayor calor, los días son más largos porque el Sol proporciona luz directa a la Tierra. Comienza alrededor del 21 de junio en el 
+        hemisferio norte y el 21 de diciembre en el hemisferio sur. A menudo, los cultivos de maíz se cosechan al final del verano.
+    </div>
+
+    <h2>Estación de otoño:</h2>
+    <div class="fixed">
+        El otoño es la estación del año donde desciende la temperatura, las hojas de los árboles pierden su color verde y comienzan 
+        a caer. Esta época comienza alrededor del 21 de septiembre en el hemisferio norte y el 21 de marzo en el hemisferio sur. Algunas aves migran a climas más cálidos.
+    </div>
+<div>
+    <p>-La posición sticky sirve para especificar que un fragmento se apegue a una parte especifica de la venana del navegador, en este caso a la parte superior, es la que utilizamos para describir el dato adicional del verano
+    </p>
+</div>
+<div>
+    <p>-La posición absolute nos ayuda a que un recuadro se coloque de manera cercana al recuadro más próximo, en este caso al de la posición relative(un recuadro que se coloca en posición normal) estos dos utilizamos para hablar sobre el invierno
+    </p>
+</div>
+<div>
+    <p>-La posición static sirve colocar un recuadro de manera que este se posiciona de manera que sigue la concordancia de ubicación de la página, ninguna de las propiedades suele influir en él. Lo utilizamos para describir la estación de la primavera
+    </p>
+</div>
+<div>
+    <p>-La posición fixed genera que un elemento se comporte como si estuviera "pegado" a la ventana del navegador, independientemente de cómo se mueva el contenido de la página. lo utilizamos para describir la estación del otoño
+    </p>
+</div>
+</body>
+</html>
